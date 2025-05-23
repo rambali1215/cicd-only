@@ -1,7 +1,7 @@
 name: CI
 on: push
 jobs: 
-  greet:
+  checkgithub:
     runs-on: ubuntu-latest
     steps:
       - name: greet
@@ -13,3 +13,8 @@ jobs:
  
       - name: run python
         run: python check.py
+  installation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install s/w
+        run : npm install requests
